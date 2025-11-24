@@ -5,6 +5,8 @@ date: <2025-11-12 Wed>
 description: Vuedo2.0 is a reconstruction of Vuedo1.0 built with Nuxt4
 ---
 
+# this is from gitea!!
+
 # Vuedo2.0
 
 ![Static Badge](https://img.shields.io/badge/node-0?link=https%3A%2F%2Fnodejs.org%2F)
