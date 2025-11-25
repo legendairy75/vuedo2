@@ -12,7 +12,7 @@ const props = defineProps<{
 const listId = computed(() => props.list?._id ?? '')
 // console.log("LISTID:", listId.value)
 
-// const { tasks, removeTask, updateTask } = UseTask(listId)
+const {removeTask, updateTask } = UseTask(listId)
 
 const {data: tasks} = useAsyncData(
     () => `tasks-${listId.value}`,
