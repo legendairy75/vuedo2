@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   // devtools: { enabled: true, vscode: { } },
   modules: [
     '@nuxt/eslint',
-    '@nuxt/test-utils',
+    '@nuxt/test-utils/module',
     // '@nuxtjs/storybook'
     '@nuxt/ui',
     '@nuxt/icon',

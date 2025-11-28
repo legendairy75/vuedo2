@@ -26,7 +26,9 @@ async function removeList(id: string) {
 <template>
   <UCard>
     <p>Add list</p>
-    <UInput v-model="newList" @keyup.enter="addList()"/>
+    <form @submit.prevent="addList">
+      <input type="text" v-model="newList" />
+    </form>
   </UCard>
 
   <div v-for="list in lists" :key="list._id">
