@@ -5,11 +5,6 @@
 
 * Vuedo2.0
 
-![Static Badge](https://img.shields.io/badge/node-0?link=https%3A%2F%2Fnodejs.org%2F)
-![Static Badge](https://img.shields.io/badge/pnpm-0)
-![Static Badge](https://img.shields.io/badge/nuxt-0)
-![Static Badge](https://img.shields.io/badge/mongoDB-0)
-
 Vuedo2.0 is a reconstruction of Vuedo1.0 built with Nuxt4
 
 ** Getting Started
@@ -110,10 +105,14 @@ curl -X DELETE http://localhost:3000/api/lists/<LIST_ID>/tasks/<TASK_ID>
 curl -X DELETE http://localhost:3000/api/lists/<LIST_ID>
 
 #+END_SRC
-** TODO Main [0/7]
-- [ ] Crud functionality for tasks
+** TODO Main [2/7]
+- [X] Crud functionality for tasks
 - [ ] modify ui
-- [-] add lists [4/5]
+  - [ ] make lists go side by side on wider screen and colaps under eachother in slimmer screen
+  - [ ] add cattpuchine
+  - [ ] styling
+  -
+- [X] add lists [4/5]
   - [X] make list schema
   - [X] connect tasks to list
   - [X] add lists to seed script
@@ -127,24 +126,24 @@ curl -X DELETE http://localhost:3000/api/lists/<LIST_ID>
       - [X] delete list
     - [X] push
     - [X] add list/id.get
-  - [-] render lists on web page
+  - [X] render lists on web page
     - [X] FIX :: hydration issue
-    - [ ] add add list
-    - [ ] add delete list
-    - [ ] fix add task
-    - [ ] fix put task
+    - [X] add add list
+    - [X] add delete list
+    - [X] fix add task
+    - [X] fix put task
     - [X] fix delete task
 - [ ] add testing
 - [ ] add sub tasks
 - [ ] add time stamps
 - [ ] add a today lists
 - [ ] add memos
-** - TODO [ ] Postman [2/3]
+** - TODO [ ] Postman [3/3]
 - [X] prerequest to enter list name:
   made env
 - [X] prerequest to inter task name:
   made env
-- [ ] respond with lists
+- [X] respond with lists
 ** - TODO [ ] Docs [0/3]
 Directories
 - [-] server
