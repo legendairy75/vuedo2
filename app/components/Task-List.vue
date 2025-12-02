@@ -25,22 +25,15 @@ const {data: tasks} = useAsyncData(
 
 <template>
   <!-- TASK LIST -->
-    <UPageList class="flex justify-between">
-      <UPageCard
+      <div
           v-for="task in tasks"
           :key="task._id"
-          variant="ghost"
       >
-        <template #body>
-          <div class="flex flex-row gap-4">
             <!-- Update button -->
-            <UButton @click="updateTask(task._id)">{{ task.checked ? '✓' : 'x' }}</UButton>
+            <button @click="updateTask(task._id)">{{ task.checked ? '✓' : 'x' }}</button>
             <!-- Display text + checked flag -->
-            <p class="text-3xl">{{ task.text }}</p>
+            <p>{{ task.text }}</p>
             <!-- Delete button -->
-            <UButton color="error" @click="removeTask(task._id)"> DELETE</UButton>
-          </div>
-        </template>
-      </UPageCard>
-    </UPageList>
+            <button @click="removeTask(task._id)"> DELETE</button>
+      </div>
 </template>

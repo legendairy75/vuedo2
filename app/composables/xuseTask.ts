@@ -1,7 +1,7 @@
 // Load tasks on page load (cached by useAsyncData)
 
 // TODO: This function causes hydration problems
-export function UseTask(listId: Ref<string>) {
+export function XuseTask(listId: Ref<string>) {
     /*const {data: tasks, refresh} = useAsyncData(
         () => `tasks-${listId.value}`,
         () => $fetch('/api/tasks', {
@@ -22,7 +22,7 @@ export function UseTask(listId: Ref<string>) {
         if (!newTask.value.trim()) return // don't post empty strings
 
         try {
-            await $fetch('/api/tasks', {
+            await $fetch(`/api/lists/${listId.value}/tasks`, {
                 method: 'POST',
                 body: { text: newTask.value, list: listId.value } // ✅ send plain JSON
             })

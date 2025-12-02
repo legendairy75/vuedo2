@@ -17,11 +17,11 @@ const {newTask, addTask} = UseTask(listId)
 
 <template>
   <!-- NEW TASK INPUT -->
-    <UForm @submit.prevent="addTask">
-      <div class="flex flex-row gap-4">
-    <UInput v-model="newTask"/>
-      <UButton color="secondary" type="submit" label="Add Task"/>
+    <form @submit.prevent="addTask">
+      <div>
+    <input v-model="newTask">
+        <button type="submit">Add task</button>
       </div>
-    </UForm>
+    </form>
 
 </template>
