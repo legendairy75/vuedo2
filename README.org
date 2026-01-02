@@ -111,7 +111,13 @@ curl -X DELETE http://localhost:3000/api/lists/<LIST_ID>
   - [ ] make lists go side by side on wider screen and colaps under eachother in slimmer screen
   - [ ] add cattpuchine
   - [ ] styling
-  -
+- [ ] calender
+- [ ] rich text editor
+- [ ] code eeditor (engine)
+- [ ] terminal
+- [ ] browser
+- [ ] frontend for Nvim
+- [ ] IDE
 - [X] add lists [4/5]
   - [X] make list schema
   - [X] connect tasks to list
