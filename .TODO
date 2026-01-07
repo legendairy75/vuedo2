@@ -1,0 +1,73 @@
+** TODO Main [2/7]
+- [X] Crud functionality for tasks
+- [ ] modify ui
+  - [ ] make lists go side by side on wider screen and colaps under eachother in slimmer screen
+  - [ ] add cattpuchine
+  - [ ] styling
+- [ ] calender
+- [ ] rich text editor
+- [ ] code eeditor (engine)
+- [ ] terminal
+- [ ] browser
+- [ ] frontend for Nvim
+- [ ] IDE
+- [X] add lists [4/5]
+  - [X] make list schema
+  - [X] connect tasks to list
+  - [X] add lists to seed script
+  - [X] routing [5/5]
+    - [X] get
+    - [X] post [2/2]
+      - [X] post list
+      - [X] post task to list
+    - [X] delete
+      - [X] delete task from list
+      - [X] delete list
+    - [X] push
+    - [X] add list/id.get
+  - [X] render lists on web page
+    - [X] FIX :: hydration issue
+    - [X] add add list
+    - [X] add delete list
+    - [X] fix add task
+    - [X] fix put task
+    - [X] fix delete task
+- [ ] add testing
+- [ ] add sub tasks
+- [ ] add time stamps
+- [ ] add a today lists
+- [ ] add memos
+** - TODO [ ] Postman [3/3]
+- [X] prerequest to enter list name:
+  made env
+- [X] prerequest to inter task name:
+  made env
+- [X] respond with lists
+** - TODO [ ] Docs [0/3]
+Directories
+- [-] server
+  - [-] api
+    - [X] lists
+      - [X] get
+      - [X] post
+      - [X] delete
+    - [X] tasks
+      - [X] get
+      - [X] post
+      - [X] delete
+      - [X] put
+    - [ ] debug
+  - [ ] moduels
+    - [ ] lists
+    - [ ] tasks
+  - [ ] utils/db
+- [ ] scripts
+  - [ ] init.sh
+  - [ ] seed.js
+- [ ] app
+  - [ ] components
+    - [ ] add task
+    - [ ] list view
+    - [ ] task list
+  - [ ] composables/useTask
+  - [ ] pages/index
